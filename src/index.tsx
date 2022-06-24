@@ -1,10 +1,11 @@
+import { createPortal } from 'react-dom';
 import Wrapper from './components/Wrapper';
+import Back from './components/Back';
 
 export { Wrapper };
 
 const init = () => {
-    const a = document.getElementById('root');
-    console.log(a);
+    createPortal(Back, document.body);
 };
 
 export default init;
